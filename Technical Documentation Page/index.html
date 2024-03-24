@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Technical Documentation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav id="navbar">
+    <header>Python Documentation</header>
+    <a href="#Introduction" class="nav-link">Introduction</a>
+    <a href="#Variables_and_Data_Types" class="nav-link">Variables and Data Types</a>
+    <a href="#Control_Flow" class="nav-link">Control Flow</a>
+    <a href="#Functions" class="nav-link">Functions</a>
+    <a href="#Classes_and_Objects" class="nav-link">Classes and Objects</a>
+  </nav>
+
+  <main id="main-doc">
+    <section class="main-section" id="Introduction">
+      <header>Introduction</header>
+      <p>Python is a high-level, interpreted programming language known for its simplicity and readability. It was created by Guido van Rossum and first released in 1991. Python's design philosophy emphasizes code readability with its notable use of significant whitespace.</p>
+      <p>One of Python's key features is its versatility. It supports multiple programming paradigms, including procedural, object-oriented, and functional programming. This flexibility makes Python suitable for a wide range of applications, from web development to scientific computing.</p>
+      <p>Python's extensive standard library provides built-in modules and functions for various tasks, reducing the need for external dependencies. This vast collection of modules simplifies development and encourages code reuse.</p>
+      <p>Another notable aspect of Python is its strong community support. The Python community is known for its inclusivity, helpfulness, and vibrant ecosystem. Developers worldwide contribute to libraries, frameworks, and resources, enriching the Python ecosystem.</p>
+      <p>Python's syntax is designed to be clear and expressive, allowing developers to write code in fewer lines compared to other programming languages. This concise syntax, combined with dynamic typing, promotes rapid development and prototyping.</p>
+      <p>Python is widely used in various industries and domains, including web development, data analysis, artificial intelligence, scientific research, and system administration. Its popularity continues to grow due to its simplicity, versatility, and robustness.</p> 
+      <p>To illustrate Python's simplicity, consider the classic "Hello, World!" program:</p>
+      
+      <code>
+        <p># Example 1: Hello, World! Program</p>
+        <p>print("Hello, World!")</p>
+      </code>
+      
+      <p>Executing this single line of code will output "Hello, World!" to the console. This example demonstrates Python's straightforward syntax and ease of use.</p>
+      <p>Python's interactive mode, accessible through the Python interpreter or integrated development environments (IDEs), enables developers to experiment with code snippets, test algorithms, and debug programs interactively.</p>
+      <p>Python's object-oriented nature allows developers to create modular and reusable code through the use of classes and objects. This paradigm promotes code organization, encapsulation, and abstraction, facilitating software maintenance and scalability.</p>
+      <p>In summary, Python is a powerful and user-friendly programming language suitable for both beginners and experienced developers. Its simplicity, readability, versatility, and strong community make it an excellent choice for various projects and applications.</p>
+      
+      <code>
+        <p># Example 2: Calculate the sum of two numbers</p>
+        <p>num1 = 10</p>
+        <p>num2 = 20</p>
+        <p>sum = num1 + num2</p>
+        <p>print("The sum is:", sum)</p>
+      </code>
+      
+      <code>
+        <p># Example 3: Define a function</p>
+        <p>def greet(name):</p>
+        <p>    print("Hello, " + name + "!")</p>
+        <p>greet("Alice")</p>
+      </code>
+      
+      <code>
+        <p># Example 4: Working with lists</p>
+        <p>fruits = ["apple", "banana", "cherry"]</p>
+        <p>for fruit in fruits:</p>
+        <p>    print(fruit)</p>
+      </code>
+      
+      <code>
+        <p># Example 5: Create a dictionary</p>
+        <p>person = {"name": "John", "age": 30, "city": "New York"}</p>
+        <p>print(person["name"])</p>
+      </code>
+    </section>
+
+    <section class="main-section" id="Variables_and_Data_Types">
+      <header>Variables and Data Types</header>
+      <p>In Python, variables are used to store data values. Unlike some other programming languages, Python has dynamic typing, meaning you don't need to declare the type of a variable when you create one. The interpreter automatically assigns the appropriate data type based on the value assigned to it.</p>
+      <p>Python supports various data types, including:</p>
+      <ul>
+        <li><strong>Integer:</strong> Whole numbers without any decimal point, such as 5, -3, 100.</li>
+        <li><strong>Float:</strong> Numbers with a decimal point or numbers written in exponential form, such as 3.14, -0.001, 2.5e2.</li>
+        <li><strong>String:</strong> Ordered sequence of characters enclosed within single (' ') or double (" ") quotes, such as 'hello', "world", "123".</li>
+        <li><strong>List:</strong> Ordered collection of items enclosed within square brackets [], where items can be of different data types, such as [1, 'apple', 3.14].</li>
+        <li><strong>Tuple:</strong> Ordered collection of items enclosed within parentheses (), similar to lists but immutable (cannot be changed), such as (1, 'apple', 3.14).</li>
+        <li><strong>Dictionary:</strong> Unordered collection of key-value pairs enclosed within curly braces {}, where keys are unique and immutable, such as {'name': 'John', 'age': 30}.</li>
+        <li><strong>Boolean:</strong> Represents truth values, either True or False.</li>
+      </ul>
+      <p>Variables in Python can be assigned using the assignment operator (=). For example:</p>
+      <code>
+        <p>x = 10</p>
+        <p>name = 'Alice'</p>
+        <p>pi = 3.14</p>
+      </code>
+      <p>Python also allows multiple assignments in a single line:</p>
+      <code>
+        <p>a, b, c = 1, 2, 3</p>
+      </code>
+      <p>Variables in Python are case-sensitive. For example, 'age', 'Age', and 'AGE' are considered different variables.</p>
+      <p>Python provides built-in functions such as type() to determine the data type of a variable and id() to obtain the unique identifier of an object.</p>
+      <p>It's important to choose appropriate variable names that are descriptive and meaningful. Variable names should start with a letter (a-z, A-Z) or an underscore (_) and can contain letters, numbers, or underscores.</p>
+      <p>Python also supports type conversion, allowing you to convert variables from one data type to another. For example:</p>
+      <code>
+        <p>num = '10'</p>
+        <p>num = int(num)  # Convert num from string to integer</p>
+      </code>
+      <p>Understanding variables and data types is fundamental to writing Python code effectively. Proper utilization of variables and data types ensures clarity, efficiency, and correctness in your programs.</p>
+    </section>
+
+    <section class="main-section" id="Control_Flow">
+      <header>Control Flow</header>
+      <p>Control flow in Python refers to the order in which statements are executed in a program. Python provides several control flow structures to enable decision-making and repetition in code execution.</p>
+      <p>One of the most common control flow structures is the <strong>if</strong> statement. It allows you to execute a block of code conditionally based on the evaluation of an expression. For example:</p>
+      <code>
+        <p>if x > 0:</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;print("x is positive")</p>
+      </code>
+      <p>The <strong>if-else</strong> statement extends the functionality of the <strong>if</strong> statement by providing an alternative block of code to execute when the condition is false:</p>
+      <code>
+        <p>if x > 0:</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;print("x is positive")</p>
+        <p>else:</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;print("x is non-positive")</p>
+      </code>
+      <p>Python also supports <strong>elif</strong> (short for "else if") to handle multiple conditions:</p>
+      <code>
+        <p>if x > 0:</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;print("x is positive")</p>
+        <p>elif x == 0:</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;print("x is zero")</p>
+        <p>else:</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;print("x is negative")</p>
+      </code>
+      <p>Python also supports <strong>while</strong> loops, which allow you to repeatedly execute a block of code as long as a condition is true:</p>
+      <code>
+        <p>while x > 0:</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;print("x is positive")</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;x -= 1</p>
+      </code>
+      <p>Another type of loop in Python is the <strong>for</strong> loop, which iterates over a sequence (such as a list or a string) or any iterable object:</p>
+      <code>
+        <p>for i in range(5):</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;print(i)</p>
+      </code>
+      <p>Python also provides the <strong>break</strong> statement, which allows you to exit a loop prematurely, and the <strong>continue</strong> statement, which skips the rest of the current iteration and continues with the next iteration of the loop.</p>
+      <p>Understanding control flow structures is essential for writing efficient and structured code in Python. Proper utilization of if statements, loops, and loop control statements enables you to control the flow of execution and implement complex logic in your programs.</p>
+    </section>
+
+    <section class="main-section" id="Functions">
+      <header>Functions</header>
+      <p>In Python, a function is a reusable block of code that performs a specific task. Functions allow you to organize code into logical units, making it easier to read, understand, and maintain.</p>
+  
+      <p>Defining a function in Python involves using the <strong>def</strong> keyword followed by the function name and parentheses containing any parameters the function accepts. For example:</p>
+      <code>
+        <p>def greet(name):</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;print("Hello, " + name + "!")</p>
+      </code>
+    
+      <p>You can then call the function by using its name followed by parentheses, optionally passing arguments. For example:</p>
+      <code>
+        <p>greet("Alice")</p>
+      </code>
+    
+      <p>Functions can return values using the <strong>return</strong> statement. For example:</p>
+      <code>
+        <p>def add(a, b):</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;return a + b</p>
+      </code>
+    
+      <p>Returned values can be stored in variables or used directly in expressions:</p>
+      <code>
+        <p>result = add(3, 5)</p>
+        <p>print("The sum is:", result)</p>
+      </code>
+    
+      <p>Python functions can have default parameter values, allowing you to call a function with fewer arguments than specified. For example:</p>
+      <code>
+        <p>def greet(name, greeting="Hello"):</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;print(greeting + ", " + name + "!")</p>
+      </code>
+    
+      <p>You can also define functions with variable-length argument lists using the <strong>*</strong> and <strong>**</strong> symbols. These are known as <strong>args</strong> and <strong>kwargs</strong>, respectively. For example:</p>
+      <code>
+        <p>def func(*args, **kwargs):</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;print(args)</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;print(kwargs)</p>
+      </code>
+    
+      <p>Python functions can be nested within other functions, allowing for the creation of more complex and modular code structures. This enables better code organization and encapsulation.</p>
+    
+      <p>Functions are fundamental to Python programming, providing a way to encapsulate and reuse code, improve code readability, and promote code modularity. Understanding how to define, call, and use functions effectively is essential for writing efficient and maintainable Python code.</p>
+    </section>
+
+    <section class="main-section" id="Classes_and_Objects">
+      <header>Classes and Objects</header>
+      <p>In Python, a class is a blueprint for creating objects (instances). It defines the properties (attributes) and behaviors (methods) that all objects of that class will have.</p>
+    
+      <p>Defining a class in Python involves using the <strong>class</strong> keyword followed by the class name. For example:</p>
+      <code>
+        <p>class Dog:</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;def __init__(self, name, age):</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.name = name</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.age = age</p>
+      </code>
+    
+      <p>To create an object (instance) of a class, you simply call the class name as if it were a function, optionally passing any required arguments. For example:</p>
+      <code>
+        <p>my_dog = Dog("Buddy", 3)</p>
+      </code>
+    
+      <p>Objects encapsulate data (attributes) and behavior (methods) within a single entity. You can access object attributes using dot notation. For example:</p>
+      <code>
+        <p>print(my_dog.name)</p>
+        <p>print(my_dog.age)</p>
+      </code>
+    
+      <p>Methods are functions defined within a class and operate on objects of that class. The first parameter of a method is always <strong>self</strong>, which refers to the current instance of the class. For example:</p>
+      <code>
+        <p>class Dog:</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;def bark(self):</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("Woof!")</p>
+      </code>
+    
+      <p>You can then call the method on an object of the class:</p>
+      <code>
+        <p>my_dog.bark()</p>
+      </code>
+    
+      <p>Python supports inheritance, allowing classes to inherit attributes and methods from other classes. This promotes code reusability and facilitates the creation of hierarchical class structures.</p>
+    
+      <p>Python also provides special methods, known as <strong>magic methods</strong> or <strong>dunder methods</strong> (short for "double underscore"), which allow classes to emulate built-in behavior and support operations such as addition, subtraction, comparison, and more.</p>
+    
+      <p>Understanding classes and objects is essential for object-oriented programming (OOP) in Python. Classes enable the creation of custom data types and promote code organization, encapsulation, and reuse.</p>
+    </section>  
+</main>  
+
+<script>
+  const navLinks = document.querySelectorAll('.nav-link');
+
+  navLinks.forEach(link => {
+    link.addEventListener('click', function(event) {
+      event.preventDefault(); 
+
+      const sectionId = this.getAttribute('href'); 
+      const section = document.querySelector(sectionId);
+
+      section.scrollIntoView({ behavior: 'smooth' });
+    });
+  });
+</script> 
+</html>
