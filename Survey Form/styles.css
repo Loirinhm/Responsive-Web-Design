@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+
 /* General Styling */
 body {
-  font-family: 'Arial', sans-serif; 
-  background-color: #f8f3e8; /* A soft, creamy background */
+  font-family: 'Roboto', sans-serif;
+  background-color: #f5f5f5;
   margin: 0;
   padding: 20px;
   display: flex;
@@ -18,21 +20,17 @@ body {
 }
 
 /* Titles and Description */
-#title {
-  color: #963d22; /* A warm brown shade */
-  margin-bottom: 15px;
+#title, #description {
+  color: #333;
+  margin-bottom: 20px;
 }
 
-#description {
-  color: #544231; /* A darker brown shade*/
-  margin-bottom: 20px; 
-}
 
 /* Labels and Input Fields  */
 label {
-  color: #68492f; /* A rich brown */
+  color:  #333;
   display: block;
-  margin-bottom: 5px; 
+  margin-bottom: 10px; 
 }
 
 input[type="text"],
@@ -40,10 +38,11 @@ input[type="email"],
 input[type="number"],
 select {
   width: 100%; 
-  padding: 10px;
-  margin-bottom: 15px;
-  border: 1px solid #d1a97a; /* A muted orange border */
-  border-radius: 5px; 
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
 }
 
 /* Radio Buttons and Checkboxes  */
@@ -55,24 +54,24 @@ input[type="checkbox"] {
 /* Textarea  */
 textarea {
   width: 100%; 
-  padding: 10px;
-  margin-bottom: 15px;
-  border: 1px solid #d1a97a;
-  border-radius: 5px; 
-  resize: vertical; /* Allow vertical resizing of textarea */
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
 }
 
 /* Submit Button  */
 input[type="submit"] {
-  background-color: #d1a97a; /* A warm orange */
+  background-color: #4681f4;
   color: #fff;
   border: none;
-  padding: 12px 20px;
+  padding: 15px 30px;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease; /* Smooth transition */
+  transition: background-color 0.3s ease;
 }
 
 input[type="submit"]:hover {
-  background-color: #b38b5b; /* Slightly darker on hover */
+  background-color:  #4169e1;
 }
